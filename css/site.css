@@ -320,3 +320,6 @@ footer p { margin: 0; max-width: 70ch; }
 
 .foot-login { color: var(--muted); font-size: .9rem; text-decoration: underline; text-underline-offset: 3px; justify-self: start; }
 .foot-login[hidden] { display: none; }
+
+/* parágrafos no texto das tramas */
+.trama .txt { white-space: pre-line; }
