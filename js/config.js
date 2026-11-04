@@ -6,6 +6,6 @@
  * NUNCA coloque aqui a chave "service_role" / "secret".
  */
 window.EZRA_CONFIG = {
-  url: 'https://SEU-PROJETO.supabase.co',
-  anonKey: 'COLE_AQUI_A_CHAVE_ANON'
+  url: 'https://viupmqxzkkxywedrdwxf.supabase.co',
+  anonKey: 'sb_publishable_57ZjO3lGo4CvYcPeKdwUJg_kP7nq5sZ'
 };
