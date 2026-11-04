@@ -163,7 +163,7 @@ function goalValue(d) { var g = parseInt(d && d.goal, 10); return (g >= 1 && g <
     var max = parseInt(d.max, 10);
     return {
       title: (typeof d.title === 'string' && d.title.trim()) ? d.title.slice(0, 80) : def.title,
-      text: (typeof d.text === 'string' && d.text.trim()) ? d.text.slice(0, 700) : def.text,
+      text: (typeof d.text === 'string' && d.text.trim()) ? d.text.slice(0, 3000) : def.text,
       max: (max >= 1 && max <= 20) ? max : def.max,
       chars: Array.isArray(d.chars) ? d.chars.filter(function (c) { return c && typeof c === 'object'; }).slice(0, 20) : (def.chars || [])
     };
@@ -409,7 +409,7 @@ function goalValue(d) { var g = parseInt(d && d.goal, 10); return (g >= 1 && g <
         body = {
           custom: true,
           order: cur.isNew ? Date.now() : (Number(old.order) || Date.now()),
-          title: title.slice(0, 80), text: text.slice(0, 700),
+          title: title.slice(0, 80), text: text.slice(0, 3000),
           max: (max >= 1 && max <= 20) ? max : 1,
           chars: chars
         };
@@ -417,7 +417,7 @@ function goalValue(d) { var g = parseInt(d && d.goal, 10); return (g >= 1 && g <
         var def = TR[cur.id].def;
         body = {
           title: (title && title !== def.title) ? title.slice(0, 80) : null,
-          text: (text && text !== def.text) ? text.slice(0, 700) : null,
+          text: (text && text !== def.text) ? text.slice(0, 3000) : null,
           max: (max >= 1 && max <= 20) ? max : def.max,
           chars: chars
         };
