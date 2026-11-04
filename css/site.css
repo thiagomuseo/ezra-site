@@ -323,3 +323,9 @@ footer p { margin: 0; max-width: 70ch; }
 
 /* parágrafos no texto das tramas */
 .trama .txt { white-space: pre-line; }
+
+/* Ler mais nas tramas longas */
+.trama .txt.clamp:not(.open) { max-height: 11.5em; overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent); mask-image: linear-gradient(to bottom, #000 60%, transparent); }
+.more { background: none; border: 0; padding: 0; margin: -4px 0 12px; color: var(--brass); font: inherit; font-variant-caps: all-small-caps; letter-spacing: .14em; cursor: pointer; text-decoration: underline; text-underline-offset: 4px; }
+.more[hidden] { display: none; }
+.more:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; }
